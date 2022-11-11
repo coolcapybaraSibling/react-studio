@@ -14,17 +14,12 @@ function App() {
   /* add your cart state code here */
   const [totalPrice, setTotalPrice] = useState(0.0);
   const [cartList, setCartList] = useState([])
-  function changePrice(price) {
-    
-  }
-  function changeList(name) {
 
-  }
   return (
     <div className="App">
       <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
 
-      {bakeryData.map((item, index) => {BakeryItem(item), <button onClick= {() => setTotalPrice(totalPrice + item.price)}>Click me</button>}
+      {bakeryData.map((item, index) => BakeryItem(item)
       // ( 
       //   // TODO: map bakeryData to BakeryItem components
       //   <p>item.name</p> // replace with BakeryItem component
