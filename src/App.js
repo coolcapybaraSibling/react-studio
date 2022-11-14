@@ -40,7 +40,7 @@ function App() {
           </div>
         )})}
         {/* TODO: render a list of items in the cart */}
-        <p>{"Total Cost: " + totalPrice}</p>
+        <p>{"Total Cost: " + totalPrice.toFixed(2)}</p>
       </div>
     </div>
   );
