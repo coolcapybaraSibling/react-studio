@@ -35,16 +35,12 @@ function App() {
         <h2>Cart</h2>
         {Object.keys(cartMap).map((key) =>{
         return(
-          <>
           <div>
-          {bakeryData[key].name + ": " +cartMap[key] +" "}
+            {cartMap[key] + "x " + bakeryData[key].name}
           </div>
-          </>
-        )
-
-      })}
+        )})}
         {/* TODO: render a list of items in the cart */}
-        <h2>{totalPrice}</h2>
+        <p>{"Total Cost: " + totalPrice}</p>
       </div>
     </div>
   );
